@@ -14,14 +14,14 @@ public class Main {
 				"65537");
 
 		BERTLV bertlv = new BERTLV();
-		String N = bertlv.encode(rsa.getN().toString());
-		String pub = bertlv.encode(rsa.getPubKey().toString());
-		String priv = bertlv.encode(rsa.getPrivKey().toString());
-		String p = bertlv.encode(rsa.getP().toString());
-		String q = bertlv.encode(rsa.getQ().toString());
-		String exp1 = bertlv.encode(rsa.getExponent1().toString());
-		String exp2 = bertlv.encode(rsa.getExponent2().toString());
-		String coefficient = bertlv.encode(rsa.getCoefficient().toString());
+		String N = bertlv.encode(rsa.getN());
+		String pub = bertlv.encode(rsa.getPubKey());
+		String priv = bertlv.encode(rsa.getPrivKey());
+		String p = bertlv.encode(rsa.getP());
+		String q = bertlv.encode(rsa.getQ());
+		String exp1 = bertlv.encode(rsa.getExponent1());
+		String exp2 = bertlv.encode(rsa.getExponent2());
+		String coefficient = bertlv.encode(rsa.getCoefficient());
 
 		String result = "020100" + N + pub + priv + p + q + exp1 + exp2 + coefficient;
 		int length = result.length() / 2;

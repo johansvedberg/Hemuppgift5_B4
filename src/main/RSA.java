@@ -26,35 +26,35 @@ public class RSA {
 
 	}
 
-	public BigInteger getPrivKey() {
-		return privKey;
+	public String getPrivKey() {
+		return privKey.toString();
 	}
 
-	public BigInteger getPubKey() {
-		return pubKey;
+	public String getPubKey() {
+		return pubKey.toString();
 	}
 
-	public BigInteger getN() {
-		return n;
+	public String getN() {
+		return n.toString();
 	}
 
-	public BigInteger getCoefficient() {
-		return coefficient;
+	public String getCoefficient() {
+		return coefficient.toString();
 	}
 
-	public BigInteger getExponent1() {
-		return exponent1;
+	public String getExponent1() {
+		return exponent1.toString();
 	}
 
-	public BigInteger getExponent2() {
-		return exponent2;
+	public String getExponent2() {
+		return exponent2.toString();
 	}
 
-	public BigInteger getP() {
-		return p;
+	public String getP() {
+		return p.toString();
 	}
 
-	public BigInteger getQ() {
-		return q;
+	public String getQ() {
+		return q.toString();
 	}
 }
